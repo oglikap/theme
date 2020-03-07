@@ -1,0 +1,288 @@
+/*
+0 - 639px: default
+640px - 959px: medium
+960px - 1199px: large
+1200px - 1599px: xlarge
+1600px - ~ : xxlarge
+*/
+body {
+  background-color: #f7f7f7;
+  padding: 1.5rem; }
+
+.bs-vertical-box {
+  position: relative;
+  width: 4em;
+  height: 4em;
+  padding: 5px; }
+  .bs-vertical-box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 4em solid transparent;
+    border-top-color: white;
+    border-left-color: white; }
+  .bs-vertical-box .uk-logo {
+    position: relative;
+    z-index: 1; }
+
+@media screen and (min-width: 640px) {
+  .bs-vertical-box {
+    width: 5em;
+    height: 5em;
+    padding: 5px; }
+    .bs-vertical-box:before {
+      border: 5em solid transparent;
+      border-top-color: white;
+      border-left-color: white; } }
+.bs-topdown {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%); }
+  .bs-topdown__link {
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    transition: all .5s; }
+    .bs-topdown__link:hover {
+      color: #ffff48;
+      transform: translateY(0.5rem); }
+
+.bs-menu {
+  color: rgba(255, 255, 255, 0.7); }
+  .bs-menu__list {
+    list-style: none;
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    display: flex;
+    justify-content: space-around; }
+    .bs-menu__list > li {
+      font-family: 'Noah Bold', sans-serif;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 1rem;
+      word-spacing: -.25rem;
+      font-size: .85rem; }
+      .bs-menu__list > li > a {
+        color: inherit;
+        font-weight: normal;
+        filter: drop-shadow(1px 1px 1px black); }
+
+ul.bs-inline > li {
+  display: inline-block;
+  font-size: 1.75em;
+  padding-right: 1.5em; }
+  ul.bs-inline > li > a {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Noah Bold', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1; }
+    ul.bs-inline > li > a:hover {
+      text-decoration: none;
+      border-bottom: 3px solid #ffff48; }
+  ul.bs-inline > li.uk-active a {
+    color: #ffff48;
+    font-size: 2.5em; }
+    ul.bs-inline > li.uk-active a:hover {
+      text-decoration: none;
+      border-bottom: none; }
+
+ul.bs-menu-divider > li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 2em; }
+  ul.bs-menu-divider > li a {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: underline; }
+  ul.bs-menu-divider > li.uk-active > a {
+    text-decoration: none;
+    font-size: 1.5em; }
+  ul.bs-menu-divider > li:after {
+    content: ' / '; }
+  ul.bs-menu-divider > li:last-child:after {
+    content: ''; }
+
+.bs-about-gallery > a:hover {
+  color: #ffff48; }
+
+.bs-wrapper {
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.16);
+  border-radius: 2px; }
+
+.bs-hero {
+  background-size: cover;
+  background-position: center;
+  min-height: calc(100vh - 2rem); }
+  .bs-hero__overlay {
+    min-height: calc(100vh - 2rem);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), transparent, rgba(0, 0, 0, 0.2));
+    position: relative; }
+  .bs-hero__overlay-text {
+    line-height: 1;
+    width: 90%;
+    position: absolute;
+    left: 35%;
+    bottom: 17.5%; }
+  .bs-hero__overlay-cursive {
+    font-family: 'Shelley Script';
+    color: rgba(255, 255, 74, 0.7); }
+    .bs-hero__overlay-cursive span {
+      font-size: 3.5rem;
+      filter: drop-shadow(1px 1px 3px #000); }
+      .bs-hero__overlay-cursive span span {
+        font-size: 2em; }
+  .bs-hero__overlay-title {
+    font-family: 'Noah Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.5); }
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 12px; }
+    html header {
+      font-size: 10px; } }
+.bs-color-red {
+  color: #840f0a; }
+
+.uk-link, a {
+  color: #666666;
+  font-size: 1.25em; }
+  .uk-link:hover, a:hover {
+    color: #666666; }
+
+.bs-opacity {
+  opacity: .7; }
+
+@media (max-width: 823px) and (orientation: landscape) {
+  html {
+    font-size: 8px; }
+    html header {
+      font-size: 7px; }
+    html p {
+      font-size: 13px; } }
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url("../fonts/2FDF27_8_0.woff2") format("woff2"), url("../fonts/2FDF27_8_0.woff") format("woff"), url("../fonts/2FDF27_8_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Noah Bold';
+  src: url("../fonts/3909F9_0_0.woff2") format("woff2"), url("../fonts/3909F9_0_0.woff") format("woff"), url("../3909F9_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Shelley Script';
+  src: url("../fonts/2FDF27_3E_0.woff2") format("woff2"), url("../fonts/2FDF27_3E_0.woff") format("woff"), url("../fonts/2FDF27_3E_0.ttf") format("truetype"); }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noah Bold', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+p {
+  font-size: 1.125em; }
+  p.uk-text-bold {
+    font-size: 1.25em; }
+
+em {
+  color: #666666; }
+
+body {
+  font-family: "AvenirNextLTPro-Medium", sans-serif; }
+
+#showHide {
+  display: none; }
+
+blockquote {
+  font-size: .875em; }
+
+.bs-blockquote {
+  padding-left: 2em;
+  padding-right: 2em; }
+  .bs-blockquote > p {
+    line-height: 1; }
+
+@media screen and (min-width: 640px) {
+  p {
+    font-size: 1.35em; }
+    p.uk-text-bold {
+      font-size: 1.375em; } }
+.uk-navbar-item {
+  font-family: "AvenirNextLTPro-Medium", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+.uk-nav > li > a {
+  text-transform: none;
+  font-size: 3em; }
+
+header > div > div > div > div > #menu-techniek-menu #menu-item-417 > a {
+  font-size: 1.675em;
+  text-decoration: underline; }
+  header > div > div > div > div > #menu-techniek-menu #menu-item-417 > a:hover {
+    text-decoration: none; }
+
+.uk-totop {
+  color: rgba(255, 255, 255, 0.7); }
+  .uk-totop:hover {
+    color: #ffff48; }
+  .uk-totop:visited {
+    color: rgba(255, 255, 255, 0.7); }
+
+.bs-content {
+  columns: 1; }
+  .bs-content > h3, .bs-content > h4 {
+    font-family: "AvenirNextLTPro-Medium", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: none; }
+  .bs-content ul {
+    list-style-type: none; }
+  .bs-content > ul > li, .bs-content ol > li {
+    font-size: 1.125em;
+    padding-top: 0.25em; }
+  .bs-content a {
+    text-decoration: underline;
+    font-size: inherit; }
+
+p.wp-caption-text {
+  margin: 0;
+  padding: 0;
+  font-variant: all-small-caps;
+  font-size: 1em; }
+
+@media screen and (min-width: 960px) {
+  .bs-content {
+    columns: 2;
+    column-fill: balance;
+    column-gap: 2.5em; } }
+.bs-gallery {
+  position: relative;
+  padding-bottom: 2em; }
+  .bs-gallery:after {
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #eaeaea;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    z-index: 1; }
+  .bs-gallery:last-of-type:after {
+    border-bottom: 0; }
+
+.bs-prev-next > div > div {
+  font-family: 'Noah Bold', sans-serif; }
+  .bs-prev-next > div > div > a {
+    font-variant: all-small-caps;
+    font-weight: bold;
+    letter-spacing: 2px; }
+
+/*# sourceMappingURL=custom.css.map */

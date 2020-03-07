@@ -1,0 +1,60 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+
+@import "components/logo";
+@import "components/topdown";
+
+@import "layout/menu";
+@import 'layout/wrapper';
+@import 'layout/hero';
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 12px;
+    header {
+      font-size: 10px;
+    }
+  }
+}
+
+$font-main: 'AvenirNextLTPro-Medium', sans-serif;
+// $blue: #40588e;
+
+
+.bs-color-red {
+  color: $red;
+}
+
+.uk-link, a {
+  color: #666666;
+  font-size: 1.25em;
+  &:hover {
+    color: #666666;
+  }
+}
+
+.bs-opacity {
+  opacity: .7;
+}
+
+@media (max-width: 823px) and (orientation: landscape) {
+  html {
+    font-size: 8px;
+    header {
+      font-size: 7px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+
+@import "typografie";
+@import "navbar";
+@import "techniek";
+@import "content";
+@import "gallery";
+@import "prev-next";

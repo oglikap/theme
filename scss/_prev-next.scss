@@ -1,0 +1,10 @@
+.bs-prev-next {
+  > div > div {
+    font-family: 'Noah Bold', sans-serif;
+    > a {
+      font-variant: all-small-caps;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+}

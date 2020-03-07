@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url('../fonts/2FDF27_8_0.woff2') format('woff2'), url('../fonts/2FDF27_8_0.woff') format('woff'), url('../fonts/2FDF27_8_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noah Bold';
+  src: url('../fonts/3909F9_0_0.woff2') format('woff2'), url('../fonts/3909F9_0_0.woff') format('woff'), url('../3909F9_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Shelley Script';
+  src: url('../fonts/2FDF27_3E_0.woff2') format('woff2'), url('../fonts/2FDF27_3E_0.woff') format('woff'), url('../fonts/2FDF27_3E_0.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include heading;
+}
+
+p {
+  font-size: 1.125em;
+  &.uk-text-bold {
+    font-size: 1.25em;
+  }
+}
+em {
+  color: #666666;
+}
+body {
+  font-family: $font-main;
+}
+
+#showHide {
+  display: none;
+}
+
+blockquote {
+  font-size: .875em;
+}
+
+.bs-blockquote {
+  padding-left: 2em;
+  padding-right: 2em;
+  > p {
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  p {
+    font-size: 1.35em;
+    &.uk-text-bold {
+      font-size: 1.375em;
+    }
+  }
+
+  // #showTitle {
+  //   width: 60%;
+  // }
+
+}

@@ -1,0 +1,17 @@
+.bs-topdown {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &__link {
+    color: rgba(#fff, .5);
+    display: inline-block;
+    transition: all .5s;
+
+    &:hover {
+      color: #ffff48;
+      transform: translateY(.5rem);
+    }
+  }
+}

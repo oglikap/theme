@@ -1,0 +1,45 @@
+.bs-vertical-box {
+  position: relative;
+  width: 4em;
+  height: 4em;
+  padding: 5px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 4em solid transparent;
+    border-top-color: rgba(255, 255, 255, 1);
+    border-left-color: rgba(255, 255, 255, 1);
+  }
+  .uk-logo {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// .page-template-page-producties .bs-vertical-box, .single-producties .bs-vertical-box {
+//   &:before {
+//     border-top-color: #fff;
+//     border-left-color: #fff;
+//   }
+// }
+
+@media screen and (min-width: 640px) {
+
+  .bs-vertical-box {
+    width: 5em;
+    height: 5em;
+    padding: 5px;
+    &:before {
+      border: 5em solid transparent;
+      border-top-color: rgba(255, 255, 255, 1);
+      border-left-color: rgba(255, 255, 255, 1);
+    }
+  }
+
+}

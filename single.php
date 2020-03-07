@@ -1,20 +1,20 @@
 <?php get_header(); ?>
 
-  <div class="row">
-    <div class="col-sm-12">
+<div class="uk-section">
 
-      <?php
-        if ( have_posts() ) : while ( have_posts() ) : the_post();
+  <div class="uk-container uk-container-small">
 
-          get_template_part( 'content-single', get_post_format() );
+    <?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-          if ( comments_open() || get_comments_number() ) :
-             comments_template();
-          endif;
+  </div>
 
-        endwhile; endif;
-       ?>
+</div><!-- .uk-section -->
+<div class="uk-section uk-section-muted">
+  <div class="uk-container">
+    <?php get_template_part( 'template-parts/content', 'prev-next' ); ?>
+  </div>
+</div>
 
-    </div><!-- /.col -->
-  </div><!-- /.row -->
-<?php get_footer(); ?>
+<?php get_template_part( 'template-parts/content', 'gallery' );
+
+ get_footer(); ?>

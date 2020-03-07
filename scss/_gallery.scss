@@ -1,0 +1,16 @@
+.bs-gallery {
+  position: relative;
+  padding-bottom: 2em;
+    &:after {
+      content: '';
+      width: 100%;
+      border-bottom: solid 1px #eaeaea;
+      position: absolute;
+      left: 0%;
+      bottom: 0;
+      z-index: 1;
+  }
+  &:last-of-type:after {
+    border-bottom: 0;
+  }
+}

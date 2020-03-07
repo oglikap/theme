@@ -1,12 +1,16 @@
-</div><!-- /.container -->
+    <?php if( !is_page('contact') ) { ?>
+      <div class="uk-section">
+        <?php get_template_part( 'template-parts/content', 'totop' ); ?>
+      </div>
+    <?php } ?>
 
-  <footer class="blog-footer">
-    <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
-  </footer>
-    
-    <?php wp_footer(); ?>
+    <div class="uk-section uk-light" style="background: #840f0a">
+      <h2 class="uk-text-uppercase uk-text-center">Energienulhuis Woubrugge</h2>
+      <p class="uk-text-center"><span class="uk-text-small">&copy; <?php echo date('Y'); ?></span> Vierambachtsweg 55 | 2481 KS Woubrugge</p>
+    </div>
+
+  </div><!-- .bs-wrapper -->
+
+  <?php wp_footer(); ?>
   </body>
 </html>

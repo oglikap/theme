@@ -1,0 +1,18 @@
+header > div > div > div > div > #menu-techniek-menu #menu-item-417 > a {
+  font-size: 1.675em;
+//  color: #ffff48;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.uk-totop {
+  color: rgba(255, 255, 255, .7);
+  &:hover {
+    color: #ffff48;
+  }
+  &:visited {
+    color: rgba(255, 255, 255, .7);
+  }
+}
